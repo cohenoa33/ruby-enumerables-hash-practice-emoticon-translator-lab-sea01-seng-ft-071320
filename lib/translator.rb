@@ -28,6 +28,6 @@ def get_english_meaning (file, value)
   	if lang[:japanese] == value
   	 	return return_value = meaning 
     end
-      binding.pry
+     # binding.pry
    end
 end
