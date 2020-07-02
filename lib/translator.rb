@@ -10,7 +10,7 @@ emoticons_yml = YAML.load_file('lib/emoticons.yml')
     hash.each do |key, value| 
     hash = (key => {:english => value[0], :japanese => value[1]}}
     
-      binding.pry
+      #binding.pry
   end
 end
 
