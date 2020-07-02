@@ -6,13 +6,17 @@ require 'pry'
 def load_library (file)
   # code goes here
 emoticons_yml = YAML.load_file('lib/emoticons.yml')
-    hash = {}
-    hash.each do |key, value| 
-    hash = (key => {:english => value[0], :japanese => value[1]}}
-    
-      #binding.pry
-  end
+  hash = {}
+    emoticons_yml.each do |key, value| 
+
+    hash[key] = {}
+    hash[key][:english]= value[0] 
+	hash[key][:japanese]= value[1]
+              end
+    hash
+    #binding.pry 
 end
+
 
 def get_japanese_emoticon
   # code goes here
