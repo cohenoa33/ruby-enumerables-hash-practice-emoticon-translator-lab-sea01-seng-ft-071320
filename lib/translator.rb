@@ -10,7 +10,7 @@ def load_library (file)
 
     hash[key] = {}
     hash[key][:english]= value[0] 
-	hash[key][:japanese]= value[1]
+	  hash[key][:japanese]= value[1]
               end
     hash
     #binding.pry 
