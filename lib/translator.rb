@@ -24,7 +24,7 @@ end
 
 def get_english_meaning (file, value)
   # code goes here
-  load_library(file).map do |meaning, lang|  
+ library = load_library(file).map do |meaning, lang|  
   	if lang[:japanese] == value
   	 	return meaning 
     end
