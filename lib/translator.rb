@@ -21,7 +21,13 @@ def get_japanese_emoticon
   # code goes here
 end
 
-def get_english_meaning
-  # code goes here
-end
 
+def get_english_meaning (file, value)
+  # code goes here
+  load_library(file).map do |meaning, lang|  
+  	if lang[:japanese] == value
+  	 	return meaning 
+    end
+      binding.pry
+   end
+end
